@@ -15,13 +15,20 @@ Pewlett Hackard (PH) provided six csv files, each file containing different empl
 salary and hire date. The files were used to build an employee database and run various queries to analyze the data. Following is a summary of the six
 tables created and related information included within each file. 
 
+####
 •	departments: contains department number and department name
+
 •	dept_emp: contains employee number, department number, employment from and to dates
+
 •	dept_manager: contains department number, employee number, from and to dates
+
 •	employees: contains employee number, birth date, first name, last name, hire date, and gender
+
 •	salaries: employee number, salary, from and to dates
+
 •	titles: employee number, title, from and to dates
 
+###
 Below is a summary of supplemental tables created to address management’s additional requests regarding upcoming retirement eligibility.  
 
 •	Employee Titles Table: For employees born between January 1, 1952 and December 31, 1955, a table was created to associate the job title to the
