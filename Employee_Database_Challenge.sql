@@ -29,27 +29,14 @@ FROM unique_titles AS ut
 GROUP BY ut.title
 ORDER BY COUNT(ut.title) DESC
 
--- extract birth year from employee table
-SELECT EXTRACT (year FROM e.birth_date), e.emp_no
-INTO emp_birth_year
+-- query and group retirement eligible employees by birth year
+SELECT 
+EXTRACT (year FROM e.birth_date),
+COUNT(e.emp_no)
 FROM employees AS e
-
--- create table of retirement eligible employees based on birth year
-SELECT 	ut.emp_no,
-		ut.first_name,
-		ut.last_name,
-		ut.title,
-		eby.date_part
-INTO retirement_date
-FROM unique_titles AS ut
-LEFT JOIN emp_birth_year AS eby
-ON (ut.emp_no = eby.emp_no)
-
--- retirement eligible employees based on birth year
-SELECT COUNT(rd.date_part), rd.date_part
-FROM retirement_date AS rd
-GROUP BY rd.date_part
-ORDER BY COUNT(rd.date_part)
+RIGHT JOIN unique_titles as ut
+ON (e.emp_no = ut.emp_no)
+GROUP BY 1
 
 -- create mentorship eligibility table 
 SELECT DISTINCT ON (e.emp_no) e.emp_no,
