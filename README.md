@@ -61,13 +61,13 @@ Summary
 As part of the “silver tsunami”, there are 72,458 jobs that will need to be filled. This figure is based on results
 from the Retiring Titles table, which filters based on birth year falling between 1952 and 1955. To further assist
 with assessing the impact of this, a table was created to group retirement eligible employees based on birth year.
-First, ran a query to extract the birth year from the birth date column from the employees table and created a new 
-table ‘Employee Birth Year’. 
+First, a query was ran to extract the birth year from the birth date column from the employees table and create a new 
+table called ‘Employee Birth Year’. 
 
 ![Image2](Resources/Image2.png)	
 
 Using the LEFT JOIN function, joined the Unique Titles table, which lists the retirement eligible employees, and 
-Employee Birth Year table, which lists the birth year for each employee. 
+the Employee Birth Year table, which lists the birth year for each employee. 
 
 ![Image3](Resources/Image3.png)
 
@@ -82,13 +82,13 @@ The results show that the number employees are evenly split based on birth year.
 
 There are currently 1,549 retirement eligible employees that qualify for mentorship based on results from the 
 Mentorship Eligibility table, which filters based on birth year falling in 1965. To assist in determining if there 
-are sufficient qualified, retirement-ready employees, an additional query that should be performed is to group these 
-employees based on title, then assess whether the number of employee holding each title is inline with the rest of 
-the company. Below is the new query:
+are sufficient qualified, retirement-ready employees, an additional query was created to group the employees based on title.  
+This query can then be used to assess whether the number of employees holding each title is inline with the rest of the company. 
+Below is the new query:
 
 ![Image6](Resources/Image6.png)
 
-The results show that the majority retirement-ready employees hold either Senior Staff or Engineer titles. 
+The results show that the majority of retirement-ready employees hold either a Senior Staff or Engineer title. 
 
 ![Image7](Resources/Image7.png)
 
