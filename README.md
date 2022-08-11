@@ -61,20 +61,10 @@ Summary
 As part of the “silver tsunami”, there are 72,458 jobs that will need to be filled. This figure is based on results
 from the Retiring Titles table, which filters based on birth year falling between 1952 and 1955. To further assist
 with assessing the impact of this, a table was created to group retirement eligible employees based on birth year.
-First, a query was ran to extract the birth year from the birth date column from the employees table and create a new 
-table called ‘Employee Birth Year’. 
+A query was ran to extract the birth year from the birth date column from the employees table and then right join with
+Unique Titles table. 
 
 ![Image2](Resources/Image2.png)	
-
-Using the LEFT JOIN function, joined the Unique Titles table, which lists the retirement eligible employees, and 
-the Employee Birth Year table, which lists the birth year for each employee. 
-
-![Image3](Resources/Image3.png)
-
-Then ran a query using the function SELECT COUNT, GROUP BY and ORDER BY COUNT to group employees based on birth 
-year. 
-
-![Image4](Resources/Image4.png)
 
 The results show that the number employees are evenly split based on birth year.  
 
