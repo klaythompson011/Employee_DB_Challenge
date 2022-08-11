@@ -64,11 +64,11 @@ with assessing the impact of this, a table was created to group retirement eligi
 A query was ran to extract the birth year from the birth date column from the employees table and then right join with
 Unique Titles table. 
 
-
+![Image8](Resources/Image8.png)
 
 The results show that the number employees are evenly split based on birth year.  
 
-
+![Image8](Resources/Image9.png)
 
 There are currently 1,549 retirement eligible employees that qualify for mentorship based on results from the 
 Mentorship Eligibility table, which filters based on birth year falling in 1965. To assist in determining if there 
